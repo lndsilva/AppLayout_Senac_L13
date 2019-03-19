@@ -18,6 +18,7 @@
         android:text="Nome" />
 
     <EditText
+
         android:id="@+id/edtNomePrincipal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,6 +29,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Utilizando textApparence"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Switch"
+        android:textColor="@color/testeCor"
+        />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/borda_linear_layout"
+        android:elevation="12dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seu mundo!!!"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/testeCor"
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/earth"
+            android:layout_gravity="center_horizontal"
+            android:onClick="abrirJanelaWorld"
+            />
+
+    </LinearLayout>
 
 
 </LinearLayout>

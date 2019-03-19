@@ -3,6 +3,7 @@ package sp.senac.br.applayout;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import sp.senac.br.applayout.R;
@@ -25,5 +26,12 @@ public class MinhaActivity extends AppCompatActivity {
         nome.setText("Olá " + parametro + " Seja Bem Vindo!!!");
 
         email.requestFocus();
+    }
+
+    public void abrirJanelaWorld(View view) {
+
+        Intent intent =  new Intent(MinhaActivity.this, WorldActivity.class);
+        startActivity(intent);
+
     }
 }

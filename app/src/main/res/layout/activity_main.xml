@@ -1,90 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="30dp"
         android:orientation="vertical"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp">
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/mundo" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Usuário:"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/txtUsuario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:textSize="18sp"
-            android:drawableRight="@drawable/ic_person_dp"
-            android:padding="10dp"
-            android:background="@drawable/borda"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Senha:"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/txtSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:drawableRight="@drawable/ic_lock_dp"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:background="@drawable/borda"/>
+        tools:context=".MainActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
 
-            <Button
-                android:id="@+id/btnEntrar"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/mundo" />
+
+         <!--   <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:background="@color/colorPrimary"
-                android:drawableLeft="@drawable/ic_add_dp"
-                android:onClick="entrarSistema"
-                android:padding="20dp"
-                android:text="Entrar"
+                android:text="Usuário:"
+                android:textSize="18sp" /> -->
+
+            <EditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borda"
+                android:drawableRight="@drawable/ic_person_dp"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:hint="Usuário"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Senha:"
                 android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/btnSair"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/txtSenha"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:background="@color/colorPrimary"
-                android:drawableLeft="@drawable/ic_close_dp"
-                android:onClick="fecharApp"
-                android:padding="20dp"
-                android:text="Sair"
+                android:background="@drawable/borda"
+                android:drawableRight="@drawable/ic_lock_dp"
+                android:inputType="textPassword"
+                android:padding="10dp"
                 android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEntrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_add_dp"
+                    android:onClick="entrarSistema"
+                    android:padding="20dp"
+                    android:text="Entrar"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnSair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_close_dp"
+                    android:onClick="fecharApp"
+                    android:padding="20dp"
+                    android:text="Sair"
+                    android:textSize="18sp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>
